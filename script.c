@@ -727,36 +727,23 @@ void iter_fac_for()
 	}
 }
 
-void prime_fac()
-{
+void prime_fac() {
 	unsigned long long int input, even = 0, odd = 0, divisor = 2;
+	int first = 1;
 	printf("Problems with prime factorisation? No worries, you've me. Input: ");
 	scanf("%llu", &input);
-	
-	while ( input % divisor ) // modulus returns 0
-	{
-		even++;
-		input /= divisor;
-	}
-	if (even)
-	{
-		printf("%llu ** %llu\n", divisor, even);
-	}
-	divisor++;
-	
-	while ( input >= divisor )
-	{
-		odd = 0; // reset counter
-		while ( !( input % divisor ) )
-		{
-			odd++;
-			input /= divisor;
-		}
-		if (odd)
-		{
-			printf("%llu ** %llu\n", divisor, odd);
-		}
-		divisor += 2;
+	printf("%llu = ", input);
+    while (input>divisor) {
+        while (input%divisor) divisor++;
+        while (!(input%divisor)) {
+            if (first) {
+                printf("%llu ", divisor);
+                first = 0;
+            } else {
+                printf("x %llu ", divisor);
+            }
+            input /= divisor;
+        }
 	}
 }
 
