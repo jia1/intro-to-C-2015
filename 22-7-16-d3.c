@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+void pascal_2016();
+int nCr(int n, int r);
+int factorial(int x);
+void prime_factorise_2016();
+void pyramid_2016();
+
 int main() {
     pascal_2016();
     return 0;
