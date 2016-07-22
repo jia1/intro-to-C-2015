@@ -158,7 +158,6 @@ void q2()
 		scanf("%f", &usd);
 		printf("Equivalent SGD: %.2f\n", usd * UTOS);
 	}
-	
 	else
 	{
 		printf("Input SGD: ");
@@ -181,7 +180,6 @@ void q3()
 		scanf("%f", &c);
 		printf("Equivalent Fahrenheit: %4.1f\n", 1.8 * c + 32);
 	}
-	
 	else
 	{
 		printf("Input Fahrenheit: ");
@@ -546,6 +544,7 @@ void sort_five()
 			}
 		}
 	}
+	
 	printf("Voilà\n");
 	for ( index = 0; index < 5; index++ )
 	{
@@ -582,6 +581,7 @@ void q14()
 		// printf("%c %d\n", array[index], index);
 		fflush(stdin);
 	}
+	
 	for ( index = 0; index < 5; index++)
 	{
 		if( array[index] != 10 ) // '\n'
@@ -595,6 +595,7 @@ void q14()
 			counter++;
 		}
 	}
+	
 	// printf("%d\n", counter);
 	char new[counter], copy[counter];
 	
@@ -613,6 +614,7 @@ void q14()
 			break;
 		}		
 	}
+	
 	if (check)
 	{
 		printf("I am a palindrome.\n");
@@ -772,7 +774,6 @@ void pascal()
 		printf("\n");
 	}
 	*/
-	
 	for ( row = 0; row < n; row++ )
 	{
 		array[row][0] = 1;  // filling up the array at the first column
