@@ -37,11 +37,11 @@ int factorial(int x) {
 }
 
 void prime_factorise_2016() {
-	unsigned long long int input, even = 0, odd = 0, divisor = 2;
-	int first = 1;
-	printf("Problems with prime factorisation? No worries, you've me. Input: ");
-	scanf("%llu", &input);
-	printf("%llu = ", input);
+    unsigned long long int input, even = 0, odd = 0, divisor = 2;
+    int first = 1;
+    printf("Problems with prime factorisation? No worries, you've me. Input: ");
+    scanf("%llu", &input);
+    printf("%llu = ", input);
     while (input>divisor) {
         while (input%divisor) divisor++;
         while (!(input%divisor)) {
@@ -53,7 +53,7 @@ void prime_factorise_2016() {
             }
             input /= divisor;
         }
-	}
+    }
 }
 
 void pyramid_2016() {
